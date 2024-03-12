@@ -2,6 +2,9 @@
 const calculateUniquePlaybackTime = (user_id, records) => {
   // Get records with user_id
     const userRecords = records.filter((record) => record.user_id === user_id);
+    if (userRecords.length == 0){
+      return 0
+    }
     const timeStartArr = [];
     const timeStopArr = [];
     let totalUniquePlaybackTime = 0;

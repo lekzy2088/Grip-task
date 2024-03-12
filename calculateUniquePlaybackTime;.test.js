@@ -63,4 +63,7 @@ describe('calculateUniquePlaybackTime', () => {
     it('should return 100', () => {
       expect(calculateUniquePlaybackTime(3, records,)).toEqual(100);
     });
+    it('should return 0', () => {
+      expect(calculateUniquePlaybackTime(737, records,)).toEqual(0);
+    });
 });
