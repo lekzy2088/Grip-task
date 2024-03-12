@@ -4,10 +4,11 @@ def handler(dataToProcess):
     data = get_data(dataToProcess)
     return process_data(data)
 
+# Function to get data
 def get_data(inputData):
     result = inputData
     return result
-
+# Function to process data
 def process_data(data):
     newDataList = []
     for processedData in data:
